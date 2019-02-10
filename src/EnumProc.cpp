@@ -231,7 +231,7 @@ _heapmin();
 
 */
 
-DWORD CFindKillProcess::GetCPUUsage() // utilisation CPU du process, sur échelle de 0 à 10000: 10000 = 100%
+DWORD CFindKillProcess::GetCPUUsage() // utilisation CPU du process, sur Ã©chelle de 0 Ã  10000: 10000 = 100%
 {
 FILETIME T1, T2, T3, T4;
 unsigned __int64 TotalCPU;
@@ -260,7 +260,7 @@ m_LastCPU  = TotalCPU;
 return Result;
 }
 
-DWORD CFindKillProcess::GetMemoryUsage() // utilisation CPU du process, sur échelle de 0 à 10000: 10000 = 100%
+DWORD CFindKillProcess::GetMemoryUsage() // utilisation CPU du process, sur Ã©chelle de 0 Ã  10000: 10000 = 100%
 {
 PROCESS_MEMORY_COUNTERS pmc;
 if ( GetProcessMemoryInfo( m_hp, &pmc, sizeof(pmc)) )
